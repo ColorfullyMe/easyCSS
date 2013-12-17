@@ -8,37 +8,37 @@
    "background":{
       "initial":"not specified",
       "syntax":"n/a",
-      "desc":"n/a",
+      "desc":"The background CSS property is a shorthand for setting the individual background values in a single place in the style sheet. It assigns explicit given values and sets missing properties to their initial values.",
       "inherited":"no"
    },
    "background-attachment":{
       "initial":"scroll",
-      "syntax":"n/a",
-      "desc":"n/a",
+      "syntax":"<attachment>",
+      "desc":"If a background-image is specified, the background-attachment CSS property determines whether that image's position is fixed within the viewport, or scrolls along with its containing block.",
       "inherited":"no"
    },
    "background-color":{
       "initial":"transparent",
-      "syntax":"n/a",
-      "desc":"n/a",
+      "syntax":"<color>",
+      "desc":"The background-color CSS property sets the background color of an element, either through a color value or the keyword transparent.",
       "inherited":"no"
    },
    "background-image":{
       "initial":"none",
-      "syntax":"n/a",
-      "desc":"n/a",
+      "syntax":"<bg-image>",
+      "desc":"The CSS background-image property sets one or several background images for an element.",
       "inherited":"no"
    },
    "background-position":{
       "initial":"left top",
-      "syntax":"n/a",
-      "desc":"n/a",
+      "syntax":"<position>",
+      "desc":"The background-position CSS property sets the initial position, relative to the background position layer defined by background-origin for each defined background image.",
       "inherited":"no"
    },
    "background-repeat":{
       "initial":"repeat",
-      "syntax":"n/a",
-      "desc":"n/a",
+      "syntax":"<repeat-style>",
+      "desc":"Defines how background images are repeated. A background image can be repeated along the horizontal axis, the vertical axis, both, or not repeated at all.",
       "inherited":"no"
    },
    "border":{
