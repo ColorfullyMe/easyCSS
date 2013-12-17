@@ -125,6 +125,7 @@ h3{
 		.desc{
 			margin:0.2em 0 0 0;
 			display:block;
+            color:#a6a6a6;
 		}
 		.syntax{
 			background-color: rgba(255, 203, 0, 0.1);
