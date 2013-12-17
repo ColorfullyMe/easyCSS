@@ -1,9 +1,9 @@
 {
    "azimuth":{
       "initial":"center",
-      "syntax":"n/a",
-      "desc":"n/a",
-      "inherited":"no"
+      "syntax":"angle | [[ left-side | far-left | left | center-left | center | center-right | right | far-right | right-side ] || behind ] | leftwards | rightwards | inherit",
+      "desc":"This feature is obsolete. Although it is still supported by browsers, its usage is discouraged in new projects. Try to avoid using it.",
+      "inherited":"yes"
    },
    "background":{
       "initial":"not specified",
@@ -14,19 +14,19 @@
    "background-attachment":{
       "initial":"scroll",
       "syntax":"n/a",
-      "desc":"If a background-image is specified, the background-attachment CSS property determines whether that image's position is fixed within the viewport, or scrolls along with its containing block.",
+      "desc":"n/a",
       "inherited":"no"
    },
    "background-color":{
       "initial":"transparent",
-      "syntax":"<color>",
-      "desc":"The background-color CSS property sets the background color of an element, either through a color value or the keyword transparent.",
+      "syntax":"n/a",
+      "desc":"n/a",
       "inherited":"no"
    },
    "background-image":{
       "initial":"none",
       "syntax":"n/a",
-      "desc":"The CSS background-image property sets one or several background images for an element.a",
+      "desc":"n/a",
       "inherited":"no"
    },
    "background-position":{
