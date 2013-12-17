@@ -1,1 +1,149 @@
 /* Site CSS */
+@import url('icons.css');
+
+body{
+	background-color: #fbfbfb;
+	font-size:14px;
+	color:#464646;
+	margin:1em;
+	padding:0;
+	overflow: -moz-scrollbars-vertical; 
+	overflow-y: scroll;
+}
+h3{
+	border-bottom:1px dotted;
+	text-shadow: 0 1px 0 #fff;
+}
+#sidebar{
+	position:fixed;
+	top:1em;
+	right:1em;
+	width:25%;
+	height:100%;
+	text-align: center;
+}
+	#logo{
+		display:block;
+		width: 100%;
+		line-height: 7em;
+		background-color:#fbfbfb;
+		background-image:url('../images/logo.png');
+		background-repeat:no-repeat;
+		background-size: 90px 90px;
+		background-position: top right;
+		margin-bottom: 1em;
+	}
+		#logo .app-name{
+			font-size:1.5em;
+			font-weight:bold;
+			text-shadow: 0 1px 0 #fff;
+		}
+	.slogan{
+		text-align:right;
+		margin-bottom:3em;
+		font-style: italic;
+	}
+	.sidebar-footer{
+		margin-top:2em;
+		font-size:0.85em;
+	}
+#filters {
+	width: 100%;
+	display:block;
+	margin-bottom:5em;
+}
+	.search-row{
+		position: relative;
+	}
+		.icon-search{
+			position: absolute;
+			font-size: 1.5em;
+			margin: 0.2em 0.1em;
+		}
+		#s{
+			width: 100%;
+			line-height: 2em;
+			height:2em;
+			background-color: #fff;
+			border: 1px solid #e5e5e5;
+			-webkit-box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+			box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+			padding-left: 2em;
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		}
+#socials{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+	#socials li{
+		margin-bottom:5px;
+	}
+
+/* the list */
+#content{
+	width:70%;
+}
+	#ulCSS{
+		list-style:none;
+		margin:0;
+		padding:0;
+	}
+		#ulCSS #s-results{
+			font-weight:bold;
+			color:#a65353;
+		}
+		#ulCSS > li{
+			background-color: #fff;
+			border: 1px solid #e5e5e5;
+			-webkit-box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+			box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+			margin-bottom:40px;
+			padding:10px 20px;
+		}
+			#ulCSS > li ul{
+				list-style:none;
+				margin:1em 0;
+				padding:0;
+			}
+			#ulCSS > li ul li{
+				display:inline-block;
+				vertical-align:top;
+				margin-right:30px;
+				font-size: 1.1em;
+				border: 1px solid rgba(255, 203, 0, 0.1);
+				padding: 5px;
+			}
+		.name{
+			font-size:2.5em;
+			font-weight:bold;
+			display:block;
+			margin:0.5em 0 0 0;
+		}
+		.desc{
+			margin:0.2em 0 0 0;
+			display:block;
+		}
+		.syntax{
+			background-color: rgba(255, 203, 0, 0.1);
+			padding:10px;
+			display:block;
+			margin:2em 0 0 0;
+		}
+		.syntax:before{
+			content:'Syntax: ';
+			font-weight:bold;
+		}
+
+@media screen and (max-width: 700px) {
+	.app-name{
+		display:none;
+	}
+}
+@media screen and (min-width: 700px) and (max-width: 1068px) {
+	#logo{
+		text-align:left;
+	}
+}
