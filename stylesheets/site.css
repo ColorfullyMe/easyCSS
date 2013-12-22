@@ -55,7 +55,8 @@ h3{
 	.search-row{
 		position: relative;
 	}
-		.icon-search{
+		.warning{ color:#a65353; }
+        .icon-search{
 			position: absolute;
 			font-size: 1.5em;
 			margin: 0.2em 0.1em;
