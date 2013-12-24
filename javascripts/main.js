@@ -57,6 +57,10 @@
 						root.$el.html( root.doItems( _.filter(root.asJSON,function(item){
 							return item.name.indexOf(term)!=-1;
 						})));
+                        //highlight matches
+                        $('#ulCSS .name:contains("'+term+'")').html(function(_, html){
+                            return html.replace(new RegExp("("+term+")","g"), '<span class="matched">$1</span>');
+                        });
 					else
 						root.$el.html( root.doItems( root.asJSON ) );
 				}
