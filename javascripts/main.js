@@ -51,15 +51,23 @@
 				},
 				apply_name_filter: function(e){
 					var root = e.data,
-						term = $.trim( $(e.target).val() );
+						term = $.trim( $(e.target).val() ),
+                        how = $('input:radio[name="how"]:checked').val();
 					
-					if( term ){
-						root.$el.html( root.doItems( _.filter(root.asJSON,function(item){
-							return item.name.indexOf(term)!=-1;
+                    if( term ){
+                        var matches,replaced;
+                        switch(how){
+                            case 'contains': matches = term; replaced = "("+term+")"; break;
+                            case 'begins': matches = "^"+term; replaced = "^("+term+")"; break;
+                            case 'ends': matches = term+'$'; replaced = "("+term+")$"; break;
+                        }
+						//filter it
+                        root.$el.html( root.doItems( _.filter(root.asJSON,function(item){
+                            return new RegExp(matches,'g').test(item.name);
 						})));
                         //highlight matches
                         $('#ulCSS .name:contains("'+term+'")').html(function(_, html){
-                            return html.replace(new RegExp("("+term+")","g"), '<span class="matched">$1</span>');
+                            return html.replace(new RegExp(replaced,'g'), '<span class="matched">$1</span>');
                         });
                     }
 					else

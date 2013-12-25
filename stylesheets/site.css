@@ -56,6 +56,12 @@ h3{
 		position: relative;
 	}
 		.warning{ color:#a65353; }
+        .how{
+            text-align:right;
+            margin-bottom:3px;
+            opacity:0.5;
+            font-size:0.9em;
+        }
         .icon-search{
 			position: absolute;
 			font-size: 1.5em;
@@ -114,6 +120,7 @@ h3{
 				display:inline-block;
 				vertical-align:top;
 				margin-right:30px;
+                margin-bottom:5px;
 				font-size: 1.1em;
 				border: 1px solid rgba(255, 203, 0, 0.1);
 				padding: 5px;
@@ -123,6 +130,7 @@ h3{
 			font-weight:bold;
 			display:block;
 			margin:0.5em 0 0 0;
+            word-break:break-word;
 		}
 		.desc{
 			margin:0.2em 0 0 0;
@@ -139,7 +147,7 @@ h3{
 			content:'Syntax: ';
 			font-weight:bold;
 		}
-.matched{color:red;}
+.matched{color:rgba(255,0,0,0.5);}
 @media screen and (max-width: 700px) {
 	.app-name{
 		display:none;
